@@ -1,0 +1,441 @@
+@font-face {
+    font-family: 'Homepage';
+    src: url('fonts/homepage.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Houschka';
+    src: url('fonts/houschka.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'Homepage';
+    color: #ef4244;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Homepage';
+    color: #ef4244;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Homepage';
+    color: #282828;
+    text-align: center;
+}
+
+p {
+    font-family: 'Houschka';
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ul {
+    font-family: "Houschka";
+    padding: 0;
+    margin: 0;
+    padding-left: 5.75vw;
+    padding-top: 2vw;
+    
+}
+
+li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+
+   
+}
+
+.bodytext_w {
+    color: #fafafa;
+}
+
+.header {
+    background-color: rgba(43, 43, 43, 0.5);
+    top: 0;
+    position: relative;
+    
+}
+
+.logo {
+    max-width: 250px;
+    max-height: auto;
+    padding: 30px;
+}
+
+.main {
+    display: grid;
+    grid-template-areas: 'cases''casevids''numbers''awards''services''clients''team';
+
+}
+
+.footer {
+    background-color: #282828;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; /
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #FAFAFA;
+  padding: 10px 0;
+  height: 150px;
+    font-family: 'Homepage';
+    text-transform: uppercase;
+}
+
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+#reel {
+    min-height: auto;
+    min-width: 99.1vw;
+    position: fixed;
+    z-index: -100;
+    top: 0;
+    justify-content: center;
+    padding-top: 0.9vw;
+}
+
+.vidcont {
+    margin-top: 20vh;
+    padding: 50px;
+    width: 80%;
+    text-align: center;
+    padding-left: 10vw;
+    padding-bottom: 23.5vh;
+    
+}
+
+.cases {
+    background-color: #FAFAFA;
+    grid-area: cases;
+    padding: 50px;
+}
+
+.casevids {
+    grid-area: casevids;
+    padding: 50px;
+    background-color: #fafafa;
+}
+
+.caseimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.casescreens {
+    max-height: 35vh;
+    max-width: auto;
+    margin: 0;
+}
+
+.numbers {
+    background-color: #DDDDDD;
+    grid-area: numbers;
+    padding: 50px;
+   
+}
+
+.numbersflex {
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+}
+
+.numberspad {
+    padding-left: 15px;
+    
+}
+
+.numberspad.padright {
+    padding-left: 10px;
+    padding-right: 80px;
+}
+
+.award {
+    max-width: 100px;
+    max-height: 100px;
+    padding: 25px;
+}
+
+.awards {
+    background-color: #282828;
+    grid-area: awards;
+    padding: 50px;
+
+}
+
+.awardimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+
+.services {
+    background-color: #FAFAFA;
+    grid-area: services;
+    padding: 50px;
+    display: inline;
+}
+
+.client {
+    max-width: 100px;
+    max-height: 100px;
+    padding: 50px;
+}
+
+.clients {
+    background-color: #282828;
+    grid-area: clients;
+    padding: 50px;
+}
+
+.clientimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+
+.team {
+    background-color: #FAFAFA;
+    grid-area: team;
+    padding: 50px;
+}
+
+.staff {
+    background-color: #FAFAFA;
+}
+
+.staffimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    align-items: center;
+}
+
+.staffphoto {
+  max-height: 35vh;
+    max-width: auto;
+/*    display: block;*/
+/*
+  width: 100%;
+  height: auto;
+*/
+    
+}
+
+.cont{
+    position: relative;
+  width: auto;
+    margin: 0;
+}
+
+.overlay {
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 99%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #282828;
+}
+
+.cont:hover .overlay {
+  opacity: 0.75;
+}
+
+.overlaytext {
+    font-family: 'Homepage';
+    color: #ef4244;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+    text-transform: uppercase;
+}
+
+.address {
+    float: left;
+    padding: 50px;
+    
+}
+.form {
+padding: 50px;
+    
+}
+
+.footerhead {
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 0px;
+}
+
+.footerlogo {
+     max-width: 250px;
+    max-height: auto;
+/*    padding: 30px;*/
+    margin-bottom: 20px;
+}
+
+.footertext {
+    text-align: left;
+}
+
+label {
+    font-family: 'Houschka';
+    color: #fafafa;
+    text-transform: uppercase;
+}
+
+input {
+    border-radius: 20px;
+   
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input:hover {
+  border: 3px solid #ef4244;
+}
+
+#message {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #282828;
+    font-family: 'Homepage';
+    text-transform: uppercase;
+    color: #ef4244
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #reel {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #reel { 
+        width:auto;
+        height: 100%;
+    }
+}
+@media (max-width: 1000px) {
+    #reel {
+        display: none;
+    }
+    body {
+        background: url('images/screenshots/reelscreen.png');
+        background-size: cover;
+        
+    }
+}
